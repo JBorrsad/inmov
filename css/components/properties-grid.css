@@ -1,0 +1,207 @@
+/* ============================================================
+   PROPERTIES-GRID.CSS - Estilos del grid de propiedades
+   ============================================================ */
+
+.iv-properties {
+	padding: 5rem 0;
+	background-color: var(--iv-color-dark);
+}
+
+.iv-properties__header {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.iv-properties__title {
+	font-size: 2.5rem;
+	font-weight: 300;
+	margin-bottom: 0.5rem;
+	color: var(--iv-text-white);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.iv-properties__title strong {
+	font-weight: 700;
+	font-style: italic;
+	color: var(--iv-color-primary);
+}
+
+.iv-properties__grid {
+	margin-bottom: 3rem;
+}
+
+.iv-properties__card {
+	position: relative;
+	background-color: var(--iv-color-secondary);
+	border-radius: 0;
+	overflow: hidden;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+	transition: all 0.35s ease;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.iv-properties__card:hover {
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+	transform: translateY(-6px);
+}
+
+.iv-properties__card-image {
+	position: relative;
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+}
+
+.iv-properties__card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.5s ease;
+}
+
+.iv-properties__card:hover .iv-properties__card-image img {
+	transform: scale(1.05);
+}
+
+.iv-properties__card-favorite {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	width: 45px;
+	height: 45px;
+	background-color: rgba(255, 255, 255, 0.95);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+	z-index: 10;
+}
+
+.iv-properties__card-favorite:hover {
+	background-color: var(--iv-color-primary);
+	transform: scale(1.1);
+}
+
+.iv-properties__card-favorite--active {
+	background-color: var(--iv-color-primary);
+}
+
+.iv-favorite-icon {
+	width: 22px;
+	height: auto;
+	transition: var(--iv-transition);
+}
+
+.iv-properties__card-favorite--active .iv-favorite-icon {
+	filter: brightness(0) invert(1);
+}
+
+.iv-properties__card-content {
+	padding: 2rem 1.75rem;
+	background-color: var(--iv-color-secondary);
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.iv-properties__card-title {
+	font-size: 1.35rem;
+	font-weight: 600;
+	color: var(--iv-text-white);
+	margin-bottom: 0.35rem;
+	text-transform: capitalize;
+}
+
+.iv-properties__card-title span {
+	color: var(--iv-gray-muted);
+	font-weight: 400;
+	font-size: 1.15rem;
+}
+
+.iv-properties__card-location {
+	font-size: 1.05rem;
+	color: var(--iv-text-light);
+	margin-bottom: 1.25rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.iv-properties__card-features {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.25rem;
+	font-size: 0.95rem;
+	color: var(--iv-text-light);
+	margin-bottom: 1.5rem;
+	align-items: center;
+}
+
+.iv-properties__card-features span {
+	display: inline-flex;
+	align-items: center;
+	font-size: 0.95rem;
+}
+
+.iv-properties__card-features span:not(:last-child)::after {
+	content: '·';
+	margin-left: 0.4rem;
+	margin-right: 0.15rem;
+	color: var(--iv-gray-muted);
+	font-weight: 400;
+}
+
+.iv-properties__card-features strong {
+	font-weight: 700;
+	color: var(--iv-text-white);
+}
+
+.iv-properties__card-price {
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--iv-color-primary);
+	margin-top: auto;
+	transition: color 0.3s ease;
+}
+
+.iv-properties__card:hover .iv-properties__card-price {
+	color: var(--iv-color-primary-dark);
+}
+
+.iv-properties__card-ref {
+	position: absolute;
+	bottom: 1.5rem;
+	left: 1.5rem;
+	background-color: rgba(60, 65, 70, 0.9);
+	color: var(--iv-text-white);
+	padding: 0.55rem 1.15rem;
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	z-index: 3;
+	border-radius: 2px;
+}
+
+.iv-properties__link-more {
+	display: block;
+	text-align: center;
+	margin-top: 2.5rem;
+	font-size: 1.15rem;
+	font-weight: 600;
+	color: var(--iv-color-primary);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	transition: var(--iv-transition);
+}
+
+.iv-properties__link-more:hover {
+	color: var(--iv-color-primary-dark);
+	transform: translateX(5px);
+}
+

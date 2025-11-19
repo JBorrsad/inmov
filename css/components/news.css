@@ -1,0 +1,110 @@
+/* ============================================================
+   NEWS.CSS - Estilos de "Últimas noticias"
+   ============================================================ */
+
+.iv-news {
+	padding: 5rem 0;
+	background-color: var(--iv-bg-soft);
+}
+
+.iv-news__header {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.iv-news__title {
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: var(--iv-text-dark);
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.iv-news__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2.5rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.iv-news__card {
+	background-color: var(--iv-color-white);
+	border-radius: var(--iv-border-radius-lg);
+	overflow: hidden;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+	transition: all 0.4s ease;
+}
+
+.iv-news__card:hover {
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+	transform: translateY(-8px);
+}
+
+.iv-news__card-image {
+	width: 100%;
+	height: 320px;
+	overflow: hidden;
+}
+
+.iv-news__card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.5s ease;
+}
+
+.iv-news__card:hover .iv-news__card-image img {
+	transform: scale(1.08);
+}
+
+.iv-news__card-content {
+	padding: 2rem;
+}
+
+.iv-news__card-date {
+	font-size: 0.9rem;
+	color: var(--iv-color-primary);
+	margin-bottom: 0.75rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.iv-news__card-title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: var(--iv-text-dark);
+	line-height: 1.4;
+	transition: var(--iv-transition);
+}
+
+.iv-news__card:hover .iv-news__card-title {
+	color: var(--iv-color-primary);
+}
+
+.iv-news__card-excerpt {
+	font-size: 1rem;
+	line-height: 1.7;
+	color: var(--iv-text-light);
+	margin-bottom: 1.5rem;
+}
+
+.iv-news__card-link {
+	display: inline-block;
+	color: var(--iv-color-primary);
+	font-weight: 600;
+	font-size: 0.95rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	transition: var(--iv-transition);
+	position: relative;
+}
+
+.iv-news__card-link:hover {
+	color: var(--iv-color-primary-dark);
+	text-decoration: underline;
+}
+

@@ -1,0 +1,116 @@
+/* ============================================================
+   FUTURE-SECTION.CSS - Estilos de "Elige tu futuro"
+   ============================================================ */
+
+.iv-future {
+	position: relative;
+	padding: 5rem 0;
+	background-color: var(--iv-color-dark);
+	color: var(--iv-text-white);
+	overflow: hidden;
+	min-height: 450px;
+}
+
+.iv-future__title {
+	text-align: center;
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: var(--iv-text-white);
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.iv-future__icon {
+	text-align: center;
+	margin-bottom: var(--iv-spacing-lg);
+}
+
+.iv-future__icon img {
+	height: 70px;
+	width: auto;
+	filter: brightness(0) invert(1);
+}
+
+.iv-future__cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--iv-spacing-lg);
+	margin-top: var(--iv-spacing-xl);
+}
+
+.iv-future__card {
+	position: relative;
+	padding: 3rem 2rem;
+	cursor: pointer;
+	transition: all 0.4s ease;
+	text-align: center;
+	border-radius: var(--iv-border-radius-lg);
+	z-index: 2;
+	min-height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.iv-future__card--dark {
+	background-color: rgba(44, 62, 80, 0.85);
+}
+
+.iv-future__card--yellow {
+	background-color: rgba(200, 166, 71, 0.9);
+}
+
+.iv-future__card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.iv-future__card--active {
+	transform: translateY(-8px) scale(1.03);
+	box-shadow: 0 15px 35px rgba(200, 166, 71, 0.5);
+}
+
+.iv-future__card-title {
+	font-size: 1.75rem;
+	font-weight: 600;
+	margin-bottom: var(--iv-spacing-md);
+	color: var(--iv-text-white);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.iv-future__card-count {
+	font-size: 1.25rem;
+	font-weight: 300;
+	color: var(--iv-text-white);
+}
+
+.iv-future__card-count strong {
+	font-size: 2.5rem;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 0.25rem;
+}
+
+.iv-future__background,
+.iv-future__background-temp {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.iv-future__title,
+.iv-future__icon,
+.iv-future__cards {
+	position: relative;
+	z-index: 2;
+}
+

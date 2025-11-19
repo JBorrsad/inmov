@@ -1,0 +1,178 @@
+/* ============================================================
+   BASE.CSS - Variables, Reset y Tipografías Base
+   ============================================================ */
+
+/* Variables CSS */
+:root {
+	/* Colores principales (paleta InmoValley) */
+	--iv-color-primary: #ffcb00;
+	--iv-color-primary-dark: #978510;
+	--iv-color-secondary: #3c4146;
+	--iv-color-dark: #181d24;
+	--iv-color-light: #f8f9fa;
+	--iv-color-white: #ffffff;
+	
+	/* Colores de texto */
+	--iv-text-dark: #3c4146;
+	--iv-text-light: #6c757d;
+	--iv-text-white: #ffffff;
+	
+	/* Colores auxiliares para bordes y fondos */
+	--iv-border-color: #dee2e6;
+	--iv-border-color-soft: #e9ecef;
+	--iv-border-color-strong: #ced4da;
+	--iv-bg-soft: #f8f9fa;
+	--iv-bg-dark-soft: #2c3e50;
+	--iv-gray-muted: #6c757d;
+	
+	/* Tipografía */
+	--iv-font-primary: 'Montserrat', sans-serif;
+	--iv-font-size-base: 16px;
+	--iv-line-height-base: 1.6;
+	
+	/* Espaciados */
+	--iv-spacing-xs: 0.5rem;
+	--iv-spacing-sm: 1rem;
+	--iv-spacing-md: 2rem;
+	--iv-spacing-lg: 3rem;
+	--iv-spacing-xl: 4rem;
+	
+	/* Bordes */
+	--iv-border-radius: 4px;
+	--iv-border-radius-lg: 8px;
+	
+	/* Sombras */
+	--iv-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+	--iv-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+	--iv-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+	
+	/* Transiciones */
+	--iv-transition: all 0.3s ease;
+}
+
+/* Reset básico */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: var(--iv-font-primary);
+	font-size: var(--iv-font-size-base);
+	line-height: var(--iv-line-height-base);
+	color: var(--iv-text-dark);
+	background-color: var(--iv-color-white);
+	overflow-x: hidden;
+	position: relative;
+}
+
+/* Tipografía base */
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--iv-font-primary);
+	font-weight: 600;
+	line-height: 1.3;
+	margin-bottom: var(--iv-spacing-sm);
+	color: var(--iv-text-dark);
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+h2 {
+	font-size: 2.5rem;
+	line-height: 1.25;
+}
+
+h2 strong {
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 2rem;
+	line-height: 1.3;
+}
+
+h4 {
+	font-size: 1.5rem;
+	line-height: 1.35;
+}
+
+h5 {
+	font-size: 1.25rem;
+	line-height: 1.4;
+}
+
+h6 {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+p {
+	margin-bottom: var(--iv-spacing-sm);
+	line-height: 1.7;
+}
+
+a {
+	color: var(--iv-color-primary);
+	text-decoration: none;
+	transition: var(--iv-transition);
+}
+
+a:hover {
+	color: var(--iv-color-primary-dark);
+	text-decoration: none;
+}
+
+ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+button {
+	font-family: var(--iv-font-primary);
+	cursor: pointer;
+	border: none;
+	background: none;
+	transition: var(--iv-transition);
+}
+
+input,
+select,
+textarea {
+	font-family: var(--iv-font-primary);
+	font-size: var(--iv-font-size-base);
+}
+
+/* Utilidades de texto */
+.iv-text-center {
+	text-align: center;
+}
+
+.iv-text-uppercase {
+	text-transform: uppercase;
+}
+
+.iv-text-white {
+	color: var(--iv-text-white);
+}
+
+.iv-text-primary {
+	color: var(--iv-color-primary);
+}
+

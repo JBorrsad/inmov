@@ -1,0 +1,194 @@
+/* Propiedad del mes - Fondo oscuro como el original */
+
+.iv-featured-property {
+	padding: 5rem 0;
+	background-color: var(--iv-bg-dark-soft);
+}
+
+.iv-featured-property h2 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 3.5rem;
+	color: var(--iv-text-white);
+}
+
+.iv-featured-property h2 strong {
+	font-weight: 700;
+	font-style: italic;
+	color: var(--iv-color-primary);
+}
+
+.iv-featured-property__link {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+.iv-featured-property__card {
+	position: relative;
+	background-color: transparent;
+	border-radius: 0;
+	overflow: hidden;
+	box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+}
+
+.iv-featured-property__card:hover {
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+	transform: translateY(-4px);
+}
+
+/* Imagen - Lado izquierdo */
+.iv-featured-property__image {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 550px;
+	overflow: hidden;
+	background-color: var(--iv-color-dark);
+}
+
+.iv-featured-property__image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 0.5s ease;
+}
+
+.iv-featured-property__card:hover .iv-featured-property__image img {
+	transform: scale(1.03);
+}
+
+/* Detalles - Lado derecho con fondo gris oscuro */
+.iv-featured-property__details {
+	padding: 3.5rem 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 550px;
+	position: relative;
+	background-color: var(--iv-color-secondary);
+}
+
+/* Botón de favorito */
+.iv-featured-property__favorite {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	width: 45px;
+	height: 45px;
+	background-color: transparent;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	z-index: 5;
+}
+
+.iv-featured-property__favorite:hover {
+	border-color: var(--iv-color-primary);
+	background-color: var(--iv-color-primary);
+}
+
+.iv-featured-property__favorite .iv-favorite-icon {
+	width: 20px;
+	height: auto;
+	filter: brightness(0) invert(1);
+}
+
+.iv-featured-property__favorite.iv-properties__card-favorite--active {
+	background-color: var(--iv-color-primary);
+	border-color: var(--iv-color-primary);
+}
+
+/* Referencia - Badge amarillo */
+.iv-featured-property__ref {
+	display: inline-block;
+	padding: 0.6rem 1.25rem;
+	background-color: var(--iv-color-primary);
+	border-radius: 2px;
+	font-size: 0.85rem;
+	color: var(--iv-text-white);
+	margin-bottom: 2.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* Texto de la propiedad */
+.iv-featured-property__text {
+	margin-bottom: 2.5rem;
+}
+
+.iv-featured-property__title {
+	font-size: 1.75rem;
+	font-weight: 600;
+	color: var(--iv-text-white);
+	margin-bottom: 0.5rem;
+	text-transform: capitalize;
+}
+
+.iv-featured-property__title span {
+	color: var(--iv-gray-muted);
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+
+.iv-featured-property__location {
+	font-size: 1.15rem;
+	font-weight: 500;
+	color: var(--iv-text-light);
+	margin: 0;
+}
+
+.iv-featured-property__location small {
+	color: var(--iv-gray-muted);
+	font-weight: 400;
+	margin: 0 0.4rem;
+}
+
+/* Meta información (características) */
+.iv-featured-property__meta {
+	margin-bottom: 2.5rem;
+}
+
+.iv-featured-property__meta-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0;
+	font-size: 1.05rem;
+	color: var(--iv-text-light);
+}
+
+.iv-featured-property__meta-list li {
+	display: inline-flex;
+	align-items: center;
+	margin-right: 0.25rem;
+}
+
+.iv-featured-property__meta-list li small {
+	color: var(--iv-gray-muted);
+	margin: 0 0.4rem;
+}
+
+.iv-featured-property__meta-list li strong {
+	font-weight: 700;
+	color: var(--iv-text-white);
+}
+
+/* Precio - Grande y dorado */
+.iv-featured-property__price {
+	font-size: 3rem;
+	font-weight: 700;
+	color: var(--iv-color-primary);
+	line-height: 1;
+}

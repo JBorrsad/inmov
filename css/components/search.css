@@ -1,0 +1,215 @@
+/* Buscador de propiedades */
+
+.iv-hero__search-box {
+	position: relative;
+	margin-top: -110px;
+	z-index: 10;
+	background-color: var(--iv-color-white);
+	padding: 2rem 1.75rem;
+	border-radius: 8px;
+	box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+	max-width: 100%;
+}
+
+.iv-search {
+	width: 100%;
+}
+
+/* Campo de búsqueda personalizado */
+.iv-search__field {
+	position: relative;
+}
+
+.iv-search__select {
+	width: 100%;
+	padding: 0.95rem 1rem;
+	background-color: var(--iv-color-white);
+	border: 1px solid var(--iv-border-color);
+	border-radius: 2px;
+	font-size: 0.9rem;
+	font-weight: 400;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: border-color 0.3s ease;
+	color: var(--iv-text-dark);
+}
+
+.iv-search__select:hover {
+	border-color: var(--iv-color-primary);
+}
+
+.iv-search__select:focus {
+	outline: none;
+	border-color: var(--iv-color-primary);
+}
+
+/* Remarcar campo activo */
+.iv-search__field--open .iv-search__select {
+	border-color: var(--iv-color-primary);
+	box-shadow: 0 0 0 2px rgba(255, 203, 0, 0.1);
+}
+
+.iv-search__select-label {
+	color: var(--iv-text-dark);
+	flex: 1;
+}
+
+.iv-search__select-icon {
+	width: 10px;
+	height: auto;
+	margin-left: 0.75rem;
+	transition: transform 0.3s ease;
+	opacity: 0.6;
+}
+
+/* Girar icono cuando está abierto */
+.iv-search__field--open .iv-search__select-icon {
+	transform: rotate(180deg);
+}
+
+/* Dropdown personalizado */
+.iv-search__dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 150;
+	background-color: var(--iv-color-white);
+	border: 1px solid var(--iv-border-color);
+	border-top: none;
+	border-radius: 0 0 2px 2px;
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+	max-height: 300px;
+	overflow-y: auto;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+.iv-search__option {
+	padding: 0.8rem 1rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	border-bottom: 1px solid var(--iv-border-color-soft);
+	font-size: 0.9rem;
+	color: var(--iv-text-dark);
+}
+
+.iv-search__option:last-child {
+	border-bottom: none;
+}
+
+.iv-search__option:hover {
+	background-color: var(--iv-color-primary);
+	color: var(--iv-text-white);
+}
+
+/* Inputs de búsqueda avanzada */
+.iv-search__input {
+	width: 100%;
+	padding: 0.95rem 1rem;
+	border: 1px solid var(--iv-border-color);
+	border-radius: 2px;
+	font-size: 0.9rem;
+	transition: border-color 0.3s ease;
+	color: var(--iv-text-dark);
+}
+
+.iv-search__input:focus {
+	outline: none;
+	border-color: var(--iv-color-primary);
+	box-shadow: 0 0 0 2px rgba(255, 203, 0, 0.1);
+}
+
+/* Búsqueda avanzada (oculta por defecto) */
+.iv-search__advanced {
+	display: none;
+}
+
+.iv-search__advanced.iv-search__advanced--open {
+	display: block;
+}
+
+/* Checkbox wrapper */
+.iv-search__checkbox-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 0.65rem;
+	padding: 0.95rem 1rem;
+	background-color: var(--iv-bg-soft);
+	border-radius: 2px;
+	border: 1px solid var(--iv-border-color-soft);
+}
+
+.iv-search__checkbox-label {
+	cursor: pointer;
+	user-select: none;
+	font-weight: 500;
+	margin: 0;
+	font-size: 0.9rem;
+	color: var(--iv-text-dark);
+}
+
+/* Botones del buscador */
+.iv-search__buttons {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+.iv-search__btn {
+	padding: 0.85rem 1.75rem;
+	border-radius: 2px;
+	font-weight: 500;
+	font-size: 0.9rem;
+	text-transform: none;
+	letter-spacing: 0;
+	transition: all 0.3s ease;
+	border: none;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.iv-search__btn--submit {
+	background-color: var(--iv-color-primary);
+	color: var(--iv-text-white);
+}
+
+.iv-search__btn--submit:hover {
+	background-color: var(--iv-color-primary-dark);
+	transform: translateY(-2px);
+}
+
+.iv-search__btn--clear {
+	background-color: var(--iv-color-secondary);
+	color: var(--iv-text-white);
+}
+
+.iv-search__btn--clear:hover {
+	background-color: var(--iv-color-dark);
+	transform: translateY(-2px);
+}
+
+.iv-search__btn--advanced {
+	background-color: var(--iv-color-primary);
+	color: var(--iv-text-white);
+}
+
+.iv-search__btn--advanced:hover {
+	background-color: var(--iv-color-primary-dark);
+}
+
+/* Iconos dentro de botones */
+.iv-search__btn img {
+	width: 16px;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+	filter: brightness(0) invert(1);
+}

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- SEO Meta Tags -->
+	<title>Inicio | InmoValley</title>
+	<meta name="description" content="Bienvenido a nuestra Inmobiliaria. Inmovalley fue fundada en Elche en el año 2005, dedicada a la intermediación inmobiliaria, contando sus componentes con más de veinte años de experiencia en el sector inmobiliario.">
+	<meta name="keywords" content="inmobiliaria, Elche, propiedades, pisos, chalets, venta, alquiler">
+	
+	<!-- Google Fonts - Montserrat -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Animate.css (para animaciones) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-b7PCLv3uOIXL0WZqbt0Z6+uJhoM4xNmBGG99nmHn7+PBkO5OVwOB1p5MNDoAuCEi0aYawslglx2hXQZGdaBo+w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/components/header.css">
+	<link rel="stylesheet" href="css/components/hero.css">
+	<link rel="stylesheet" href="css/components/search.css">
+	<link rel="stylesheet" href="css/components/future-section.css">
+	<link rel="stylesheet" href="css/components/featured-property.css">
+	<link rel="stylesheet" href="css/components/sell-section.css">
+	<link rel="stylesheet" href="css/components/properties-grid.css">
+	<link rel="stylesheet" href="css/components/welcome.css">
+	<link rel="stylesheet" href="css/components/news.css">
+	<link rel="stylesheet" href="css/components/contact.css">
+	<link rel="stylesheet" href="css/components/footer.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="iv-body">
+
+	<!-- ========== HEADER ========== -->
+	<header class="iv-header">
+		<!-- Topbar superior -->
+		<div class="iv-header__topbar">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<div class="iv-header__contact">
+							<a href="tel:966274206" class="iv-header__phone">
+								966 274 206
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 text-end">
+						<div class="d-flex justify-content-end align-items-center gap-3">
+							<!-- Selector de idioma -->
+							<div class="iv-header__language-switcher">
+								<select class="form-select form-select-sm">
+									<option value="es" selected>Español</option>
+									<option value="en">English</option>
+									<option value="fr">Français</option>
+								</select>
+							</div>
+							
+							<!-- Redes sociales -->
+							<div class="iv-header__social">
+								<a href="https://www.facebook.com/inmovalleynew" target="_blank" rel="noopener" title="Facebook">
+									<span class="iv-social-icon">f</span>
+								</a>
+							</div>
+							
+							<!-- WhatsApp -->
+							<div class="iv-header__whatsapp">
+								<a href="https://wa.me/34966274206" target="_blank" rel="noopener" title="WhatsApp">
+									<span class="iv-social-icon">W</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Navegación principal -->
+		<nav class="iv-header__nav">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-4 col-lg-4">
+						<button type="button" class="iv-header__menu-btn" id="iv-menu-toggle">
+							<img src="Assets/menu.svg" alt="Menú" class="iv-header__menu-icon">
+							<span>Menú</span>
+						</button>
+					</div>
+					<div class="col-4 col-lg-4 text-center">
+						<a href="index.html" class="iv-header__logo">
+							<img src="Assets/logo_header.svg" alt="InmoValley Inmobiliaria" class="img-fluid">
+						</a>
+					</div>
+					<div class="col-4 col-lg-4 text-end">
+						<div class="iv-header__nav-secondary">
+							<a href="#iv-sell" class="me-3 d-none d-lg-inline">Valora tu propiedad</a>
+							<a href="#iv-contact">Contactar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- Menú móvil -->
+		<div class="iv-header__mobile-menu" id="iv-mobile-menu">
+			<div class="iv-header__mobile-overlay"></div>
+			<div class="iv-header__mobile-content">
+				<button type="button" class="iv-header__mobile-close" id="iv-menu-close">
+					<span>×</span>
+				</button>
+				<nav class="iv-header__mobile-nav">
+					<ul class="iv-header__mobile-list">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="#iv-welcome">Empresa</a></li>
+						<li><a href="#iv-featured">Propiedades</a></li>
+						<li><a href="#iv-sell">Servicios</a></li>
+						<li><a href="#iv-sell">Vender</a></li>
+						<li><a href="#iv-news">Blog</a></li>
+						<li><a href="#iv-contact">Contactar</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- ========== FIN HEADER ========== -->
+
+	<!-- ========== MAIN CONTENT ========== -->
+	<main class="iv-main">
+		
+		<!-- HERO PRINCIPAL -->
+		<section class="iv-hero" id="iv-hero">
+			<div class="iv-hero__content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-lg-7">
+							<div class="iv-hero__title animate__animated animate__fadeInLeft animate__delay-1s">
+								INMO <span>VALLEY</span>
+							</div>
+							<a href="#iv-future" class="iv-hero__scroll-arrow d-none d-lg-block" id="iv-scroll-arrow">
+								<img src="Assets/arrow-right.svg" alt="INMO VALLEY, Siempre a tu lado">
+							</a>
+						</div>
+						<div class="col-md-6 col-lg-5 align-self-md-end text-lg-end text-center">
+							<div class="iv-hero__subtitle animate__animated animate__fadeInUp animate__delay-1s">
+								<small>Siempre a tu lado</small>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- BUSCADOR DE PROPIEDADES -->
+			<div class="container">
+				<div class="iv-hero__search-box">
+					<form id="iv-search-form" class="iv-search">
+						<!-- Campos principales -->
+						<div class="row g-3">
+							<!-- Estado -->
+							<div class="col-lg-3 col-md-6 col-6">
+								<div class="iv-search__field" data-field="estado">
+									<button type="button" class="iv-search__select" data-field="estado">
+										<span class="iv-search__select-label">Estado</span>
+										<img src="Assets/dropdown.svg" alt="" class="iv-search__select-icon">
+									</button>
+									<ul class="iv-search__dropdown" data-field="estado">
+										<li class="iv-search__option" data-value="">Todos</li>
+										<li class="iv-search__option" data-value="venta">Venta</li>
+										<li class="iv-search__option" data-value="alquiler">Alquiler a largo plazo</li>
+										<li class="iv-search__option" data-value="nueva_construccion">Nueva construcción</li>
+									</ul>
+								</div>
+							</div>
+							
+							<!-- Tipo -->
+							<div class="col-lg-3 col-md-6 col-6">
+								<div class="iv-search__field" data-field="tipo">
+									<button type="button" class="iv-search__select" data-field="tipo">
+										<span class="iv-search__select-label">Tipo</span>
+										<img src="Assets/dropdown.svg" alt="" class="iv-search__select-icon">
+									</button>
+									<ul class="iv-search__dropdown" data-field="tipo">
+										<li class="iv-search__option" data-value="">Todos</li>
+										<li class="iv-search__option" data-value="piso">Piso</li>
+										<li class="iv-search__option" data-value="chalet">Chalet</li>
+										<li class="iv-search__option" data-value="apartamento">Apartamento</li>
+										<li class="iv-search__option" data-value="casa">Casa</li>
+										<li class="iv-search__option" data-value="atico">Ático</li>
+									</ul>
+								</div>
+							</div>
+							
+							<!-- Población -->
+							<div class="col-lg-3 col-md-6 col-6">
+								<div class="iv-search__field" data-field="poblacion">
+									<button type="button" class="iv-search__select" data-field="poblacion">
+										<span class="iv-search__select-label">Población</span>
+										<img src="Assets/dropdown.svg" alt="" class="iv-search__select-icon">
+									</button>
+									<ul class="iv-search__dropdown" data-field="poblacion">
+										<li class="iv-search__option" data-value="">Todas</li>
+										<li class="iv-search__option" data-value="elche">Elche</li>
+										<li class="iv-search__option" data-value="santa-pola">Santa Pola</li>
+										<li class="iv-search__option" data-value="alicante">Alicante</li>
+										<li class="iv-search__option" data-value="crevillente">Crevillente</li>
+									</ul>
+								</div>
+							</div>
+							
+							<!-- Zona -->
+							<div class="col-lg-3 col-md-6 col-6">
+								<div class="iv-search__field" data-field="zona">
+									<button type="button" class="iv-search__select" data-field="zona">
+										<span class="iv-search__select-label">Zona</span>
+										<img src="Assets/dropdown.svg" alt="" class="iv-search__select-icon">
+									</button>
+									<ul class="iv-search__dropdown" data-field="zona">
+										<li class="iv-search__option" data-value="">Todas</li>
+										<li class="iv-search__option" data-value="centro">Centro</li>
+										<li class="iv-search__option" data-value="altabix">Altabix</li>
+										<li class="iv-search__option" data-value="carrus">Carrús</li>
+										<li class="iv-search__option" data-value="perleta">Perleta</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Campos avanzados (ocultos por defecto) -->
+						<div class="iv-search__advanced" id="iv-search-advanced">
+							<div class="row g-3 mt-2">
+								<!-- Precio desde -->
+								<div class="col-lg-3 col-md-6 col-6">
+									<input type="number" name="precio_desde" class="form-control iv-search__input" placeholder="Precio desde">
+								</div>
+								
+								<!-- Precio hasta -->
+								<div class="col-lg-3 col-md-6 col-6">
+									<input type="number" name="precio_hasta" class="form-control iv-search__input" placeholder="Precio hasta">
+								</div>
+								
+								<!-- Baños -->
+								<div class="col-lg-3 col-md-6 col-6">
+									<input type="number" name="banos" class="form-control iv-search__input" placeholder="Baños" min="1" max="10">
+								</div>
+								
+								<!-- Piscina -->
+								<div class="col-lg-3 col-md-6 col-6">
+									<div class="iv-search__checkbox-wrapper">
+										<input type="checkbox" name="piscina" id="piscina" class="form-check-input">
+										<label for="piscina" class="iv-search__checkbox-label">Piscina</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Botones de acción -->
+						<div class="row mt-3">
+							<div class="col-6 d-lg-none d-grid">
+								<button type="button" class="btn iv-search__btn iv-search__btn--clear">
+									<img src="Assets/eraser.svg" alt="Limpiar Filtros" class="me-2">
+									Limpiar Filtros
+								</button>
+							</div>
+							<div class="col-6 col-lg-2 d-grid ms-lg-auto">
+								<button type="button" class="btn iv-search__btn iv-search__btn--submit">
+									<img src="Assets/search.svg" alt="Buscar" class="me-2">
+									Buscar
+								</button>
+							</div>
+						</div>
+						<div class="row mt-2">
+							<div class="col-lg-6">
+								<div class="row g-0">
+									<div class="col-6 d-none d-lg-grid">
+										<button type="button" class="btn iv-search__btn iv-search__btn--clear">
+											<img src="Assets/eraser.svg" alt="Limpiar Filtros" class="me-2">
+											Limpiar Filtros
+										</button>
+									</div>
+									<div class="col-6 d-none d-lg-grid">
+										<button type="button" class="btn iv-search__btn iv-search__btn--advanced">
+											<img src="Assets/advanced search.svg" alt="Búsqueda Avanzada" class="me-2">
+											Búsqueda Avanzada
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- FIN HERO -->
+		
+		<!-- SECCIÓN "ELIGE TU FUTURO" -->
+		<section class="iv-future iv-section-spacing" id="iv-future">
+			<div class="container">
+				<div class="iv-future__icon">
+					<img src="Assets/icon logo.svg" alt="InmoValley">
+				</div>
+				<h2 class="iv-future__title">Elige tu futuro</h2>
+				
+				<div class="iv-future__cards">
+					<div class="iv-future__card iv-future__card--dark" data-image="Assets/property_1.jpg">
+						<h3 class="iv-future__card-title">Pisos en Elche</h3>
+						<p class="iv-future__card-count"><strong>20</strong> Propiedades</p>
+					</div>
+					<div class="iv-future__card iv-future__card--yellow" data-image="Assets/property_2.jpg">
+						<h3 class="iv-future__card-title">Chalets en Elche</h3>
+						<p class="iv-future__card-count"><strong>36</strong> Propiedades</p>
+					</div>
+					<div class="iv-future__card iv-future__card--dark" data-image="Assets/property_3.jpg">
+						<h3 class="iv-future__card-title">Apartamentos Santa Pola</h3>
+						<p class="iv-future__card-count"><strong>15</strong> Propiedades</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIN ELIGE TU FUTURO -->
+		
+		<!-- SECCIÓN "PROPIEDAD DEL MES" -->
+		<section class="iv-featured-property iv-section-spacing" id="iv-featured-property">
+			<div class="container">
+				<h2 class="text-center mb-5">Propiedad <strong>del</strong> <strong>mes</strong></h2>
+				<div class="row">
+					<div class="col-12">
+						<a href="#iv-featured-property" class="iv-featured-property__link">
+							<div class="iv-featured-property__card">
+								<div class="row g-0">
+									<div class="col-lg-6">
+										<div class="iv-featured-property__image">
+											<img src="Assets/property_month.jpg" alt="Piso - Venta - Elche - Porcelanosa">
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="iv-featured-property__details">
+											<button class="iv-featured-property__favorite" data-property-id="month" title="Añadir a favoritos">
+												<img src="Assets/Icon feather-heart-outline.svg" alt="Favorito" class="iv-favorite-icon">
+											</button>
+											<div class="iv-featured-property__ref">
+												<strong>Ref: P-1182</strong>
+											</div>
+											<div class="iv-featured-property__text">
+												<h3 class="iv-featured-property__title">Piso <span>Venta</span></h3>
+												<h4 class="iv-featured-property__location">Elche <small>·</small> Porcelanosa</h4>
+											</div>
+											<div class="iv-featured-property__meta">
+												<ul class="iv-featured-property__meta-list">
+													<li><span><strong>120</strong> m<sup>2</sup></span></li>
+													<li><small>·</small> <span><strong>3</strong> Habitaciones</span></li>
+													<li><small>·</small> <span><strong>2</strong> Baños</span></li>
+													<li><small>·</small> <span><strong>Piscina</strong></span></li>
+													<li><small>·</small> <span><strong>Garaje</strong></span></li>
+												</ul>
+											</div>
+											<div class="iv-featured-property__price">285.000 €</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIN PROPIEDAD DEL MES -->
+		
+		<!-- SECCIÓN "VENDE TU PROPIEDAD" -->
+		<section class="iv-sell iv-section-spacing" id="iv-sell">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<div class="iv-sell__icon mb-4">
+							<img src="Assets/icon logo.svg" alt="InmoValley">
+						</div>
+						<div class="iv-sell__content">
+							<h2 class="iv-sell__title">Vende tu propiedad <strong>con nosotros</strong></h2>
+							<p class="iv-sell__text">
+								¿Estás pensando en vender tu propiedad? En Inmovalley te ofrecemos un servicio profesional y personalizado para ayudarte a vender tu inmueble de forma rápida y al mejor precio del mercado.
+							</p>
+							<a href="#iv-contact" class="iv-sell__btn">Quiero vender</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIN VENDE TU PROPIEDAD -->
+		
+		<!-- SECCIÓN "PROPIEDADES DESTACADAS" -->
+		<section class="iv-properties iv-section-spacing" id="iv-featured">
+			<div class="container">
+				<div class="iv-properties__header">
+					<h2 class="iv-properties__title">Propiedades <strong>Destacadas</strong></h2>
+				</div>
+				
+				<div class="row g-4 iv-properties__grid">
+					<!-- Propiedad 1 -->
+					<div class="col-lg-6 col-md-6">
+						<div class="iv-properties__card" 
+							data-estado="venta" 
+							data-tipo="piso" 
+							data-poblacion="elche" 
+							data-zona="altabix" 
+							data-precio="185000" 
+							data-banos="2" 
+							data-piscina="false">
+							<div class="iv-properties__card-image">
+								<img src="Assets/property_1.jpg" alt="Propiedad 1">
+								<button class="iv-properties__card-favorite" data-property-id="1">
+									<img src="Assets/Icon feather-heart-outline.svg" alt="Favorito" class="iv-favorite-icon">
+								</button>
+							</div>
+							<div class="iv-properties__card-ref">
+								<strong>REF: P-01</strong>
+							</div>
+							<div class="iv-properties__card-content">
+								<h3 class="iv-properties__card-title">Piso <span>Venta</span></h3>
+								<h4 class="iv-properties__card-location">ELCHE · ALTABIX</h4>
+								<div class="iv-properties__card-features">
+									<span><strong>95</strong> m<sup>2</sup></span>
+									<span><strong>3</strong> Hab</span>
+									<span><strong>2</strong> Baños</span>
+								</div>
+								<div class="iv-properties__card-price">185.000 €</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Propiedad 2 -->
+					<div class="col-lg-6 col-md-6">
+						<div class="iv-properties__card" 
+							data-estado="venta" 
+							data-tipo="chalet" 
+							data-poblacion="elche" 
+							data-zona="perleta" 
+							data-precio="425000" 
+							data-banos="3" 
+							data-piscina="true">
+							<div class="iv-properties__card-image">
+								<img src="Assets/property_2.jpg" alt="Propiedad 2">
+								<button class="iv-properties__card-favorite" data-property-id="2">
+									<img src="Assets/Icon feather-heart-outline.svg" alt="Favorito" class="iv-favorite-icon">
+								</button>
+							</div>
+							<div class="iv-properties__card-ref">
+								<strong>REF: CH-265</strong>
+							</div>
+							<div class="iv-properties__card-content">
+								<h3 class="iv-properties__card-title">Chalet <span>Venta</span></h3>
+								<h4 class="iv-properties__card-location">ELCHE · PERLETA</h4>
+								<div class="iv-properties__card-features">
+									<span><strong>220</strong> m<sup>2</sup></span>
+									<span><strong>4</strong> Hab</span>
+									<span><strong>3</strong> Baños</span>
+									<span><strong>Piscina</strong></span>
+								</div>
+								<div class="iv-properties__card-price">425.000 €</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Propiedad 3 -->
+					<div class="col-lg-6 col-md-6">
+						<div class="iv-properties__card" 
+							data-estado="venta" 
+							data-tipo="apartamento" 
+							data-poblacion="santa-pola" 
+							data-zona="centro" 
+							data-precio="159000" 
+							data-banos="1" 
+							data-piscina="true">
+							<div class="iv-properties__card-image">
+								<img src="Assets/property_3.jpg" alt="Propiedad 3">
+								<button class="iv-properties__card-favorite" data-property-id="3">
+									<img src="Assets/Icon feather-heart-outline.svg" alt="Favorito" class="iv-favorite-icon">
+								</button>
+							</div>
+							<div class="iv-properties__card-ref">
+								<strong>REF: P-1429</strong>
+							</div>
+							<div class="iv-properties__card-content">
+								<h3 class="iv-properties__card-title">Piso <span>Venta</span></h3>
+								<h4 class="iv-properties__card-location">SANTA POLA · CENTRO</h4>
+								<div class="iv-properties__card-features">
+									<span><strong>75</strong> m<sup>2</sup></span>
+									<span><strong>2</strong> Hab</span>
+									<span><strong>1</strong> Baño</span>
+								</div>
+								<div class="iv-properties__card-price">159.000 €</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Propiedad 4 -->
+					<div class="col-lg-6 col-md-6">
+						<div class="iv-properties__card" 
+							data-estado="venta" 
+							data-tipo="piso" 
+							data-poblacion="elche" 
+							data-zona="carrus" 
+							data-precio="198500" 
+							data-banos="2" 
+							data-piscina="false">
+							<div class="iv-properties__card-image">
+								<img src="Assets/property_4.jpg" alt="Propiedad 4">
+								<button class="iv-properties__card-favorite" data-property-id="4">
+									<img src="Assets/Icon feather-heart-outline.svg" alt="Favorito" class="iv-favorite-icon">
+								</button>
+							</div>
+							<div class="iv-properties__card-ref">
+								<strong>REF: CH-272</strong>
+							</div>
+							<div class="iv-properties__card-content">
+								<h3 class="iv-properties__card-title">Chalet <span>Venta</span></h3>
+								<h4 class="iv-properties__card-location">ELCHE · CARRÚS</h4>
+								<div class="iv-properties__card-features">
+									<span><strong>110</strong> m<sup>2</sup></span>
+									<span><strong>3</strong> Hab</span>
+									<span><strong>2</strong> Baños</span>
+								</div>
+								<div class="iv-properties__card-price">198.500 €</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<a href="#iv-featured" class="iv-properties__link-more">Ver más propiedades →</a>
+			</div>
+		</section>
+		<!-- FIN PROPIEDADES DESTACADAS -->
+		
+		<!-- SECCIÓN "BIENVENIDO" -->
+		<section class="iv-welcome iv-section-spacing" id="iv-welcome">
+			<div class="container">
+				<div class="iv-welcome__logo">
+					<img src="Assets/icon logo.svg" alt="InmoValley">
+				</div>
+				<div class="iv-welcome__content">
+					<h2 class="iv-welcome__title">Bienvenido a nuestra Inmobiliaria</h2>
+					<p class="iv-welcome__text">
+						Inmovalley fue fundada en Elche en el año 2005, dedicada a la intermediación inmobiliaria, contando sus componentes con más de veinte años de experiencia en el sector inmobiliario.
+					</p>
+					<p class="iv-welcome__text">
+						Desde su apertura, con una primera oficina en la C/ Filet de Fora en Elche (Alicante), la empresa se ha volcado en la gestión de compraventas y arrendamientos de inmuebles en Elche y sus alrededores. En estos años, la confianza de nuestros clientes así como la profesionalidad de nuestros asesores ha ido creciendo constantemente.
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- FIN BIENVENIDO -->
+		
+		<!-- SECCIÓN "ÚLTIMAS NOTICIAS" -->
+		<section class="iv-news iv-section-spacing" id="iv-news">
+			<div class="container">
+				<div class="iv-news__header">
+					<h2 class="iv-news__title">Últimas <strong>Noticias</strong></h2>
+				</div>
+				
+				<div class="iv-news__grid">
+					<!-- Noticia 1 -->
+					<div class="iv-news__card">
+						<div class="iv-news__card-image">
+							<img src="Assets/mews_1.jpg" alt="Noticia 1">
+						</div>
+						<div class="iv-news__card-content">
+							<p class="iv-news__card-date">27 jun 2025</p>
+							<h3 class="iv-news__card-title">¿Cuánto te cuesta poner tu inmueble a un precio por encima del mercado?</h3>
+							<p class="iv-news__card-excerpt">
+								Te lo decimos con datos, no con suposiciones
+							</p>
+							<a href="#iv-news" class="iv-news__card-link">Leer más</a>
+						</div>
+					</div>
+					
+					<!-- Noticia 2 -->
+					<div class="iv-news__card">
+						<div class="iv-news__card-image">
+							<img src="Assets/news_2.jpg" alt="Noticia 2">
+						</div>
+						<div class="iv-news__card-content">
+							<p class="iv-news__card-date">14 may 2025</p>
+							<h3 class="iv-news__card-title">Cómo Vender Tu Inmueble sin Intermediarios y Evitar las Llamadas de Agencias</h3>
+							<p class="iv-news__card-excerpt">
+								Descubre las claves para gestionar la venta de tu propiedad de forma independiente
+							</p>
+							<a href="#iv-news" class="iv-news__card-link">Leer más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIN ÚLTIMAS NOTICIAS -->
+		
+		<!-- SECCIÓN "CONTACTA CON NOSOTROS" -->
+		<section class="iv-contact iv-section-spacing" id="iv-contact">
+			<div class="container">
+				<div class="iv-contact__container">
+					<h2 class="iv-contact__title">Contacta <strong>con</strong> Nosotros</h2>
+					
+					<p class="iv-contact__privacy-text">
+						Marque la casilla para contactarnos y acepte que su información se use de acuerdo con nuestra Política de privacidad que se agregará automáticamente a nuestra lista de correo, pero puede cancelarla en cualquier momento.
+					</p>
+					
+					<div class="iv-contact__checkbox">
+						<input type="checkbox" id="privacy-checkbox" class="form-check-input">
+						<label for="privacy-checkbox" class="iv-contact__checkbox-label">
+							Acepto la política de privacidad
+						</label>
+					</div>
+					
+					<button type="button" class="iv-contact__submit" id="contact-submit" disabled>
+						Enviar
+					</button>
+					
+					<div class="iv-contact__legal-text mt-4">
+						<p><strong>Responsable del tratamiento:</strong> Valley Agentes Asociados SL</p>
+						<p><strong>Finalidad del tratamiento:</strong> Gestión y control de los servicios ofrecidos a través de la página Web de Servicios inmobiliarios, Envío de información a traves de newsletter y otros</p>
+						<p><strong>Legitimación:</strong> Por consentimiento</p>
+						<p><strong>Destinatarios:</strong> No se cederan los datos, salvo para elaborar contabilidad</p>
+						<p><strong>Derechos de las personas interesadas:</strong> Acceder, rectificar y suprimir los datos, solicitar la portabilidad de los mismos, oponerse altratamiento y solicitar la limitación de éste</p>
+						<p><strong>Procedencia de los datos:</strong> El Propio interesado</p>
+					</div>
+					
+					<div class="iv-contact__info">
+						<div class="iv-contact__info-item">
+							966 274 206
+						</div>
+						<div class="iv-contact__info-item">
+							info@inmovalley.com
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FIN CONTACTA CON NOSOTROS -->
+		
+	</main>
+	<!-- ========== FIN MAIN CONTENT ========== -->
+
+	<!-- ========== FOOTER ========== -->
+	<footer class="iv-footer">
+		<div class="container">
+			<!-- Logo -->
+			<div class="iv-footer__logo">
+				<img src="Assets/logo_header.svg" alt="InmoValley">
+			</div>
+			
+			<!-- Teléfono destacado -->
+			<div class="iv-footer__phone">
+				<a href="tel:966274206">966 274 206</a>
+			</div>
+			
+			<!-- Navegación del footer -->
+			<div class="iv-footer__nav">
+				<div class="iv-footer__nav-column">
+					<h5 class="iv-footer__nav-title">Empresa</h5>
+					<a href="#iv-welcome" class="iv-footer__nav-link">Sobre nosotros</a>
+					<a href="#iv-welcome" class="iv-footer__nav-link">Equipo</a>
+					<a href="#iv-contact" class="iv-footer__nav-link">Contacto</a>
+				</div>
+				<div class="iv-footer__nav-column">
+					<h5 class="iv-footer__nav-title">Propiedades</h5>
+					<a href="#iv-featured" class="iv-footer__nav-link">Venta</a>
+					<a href="#iv-featured" class="iv-footer__nav-link">Alquiler</a>
+					<a href="#iv-featured" class="iv-footer__nav-link">Nueva construcción</a>
+				</div>
+				<div class="iv-footer__nav-column">
+					<h5 class="iv-footer__nav-title">Servicios</h5>
+					<a href="#iv-sell" class="iv-footer__nav-link">Valoración gratuita</a>
+					<a href="#iv-sell" class="iv-footer__nav-link">Vender propiedad</a>
+					<a href="#iv-news" class="iv-footer__nav-link">Blog</a>
+				</div>
+			</div>
+			
+			<!-- Información de contacto -->
+			<div class="iv-footer__contact-info">
+				<p>info@inmovalley.com</p>
+			</div>
+			
+			<!-- Redes sociales -->
+			<div class="iv-footer__social">
+				<a href="https://www.facebook.com/inmovalleynew" target="_blank" rel="noopener">
+					<span class="iv-social-icon">f</span>
+				</a>
+				<a href="#" target="_blank" rel="noopener">
+					<span class="iv-social-icon">i</span>
+				</a>
+				<a href="#" target="_blank" rel="noopener">
+					<span class="iv-social-icon">in</span>
+				</a>
+			</div>
+			
+			<!-- Bottom footer -->
+			<div class="iv-footer__bottom">
+				<p class="iv-footer__copyright">
+					&copy; 2025 INMOVALLEY
+				</p>
+				<div class="iv-footer__legal-links">
+					<a href="#iv-contact">Nota legal</a>
+					<a href="#iv-contact">Privacidad</a>
+					<a href="#iv-contact">Cookies</a>
+					<a href="#iv-featured">Mapa Web</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ========== FIN FOOTER ========== -->
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+	
+	<!-- Bootstrap 5 JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!-- Custom JavaScript -->
+	<script src="js/core.js"></script>
+	<script src="js/navigation.js"></script>
+	<script src="js/hero-search.js"></script>
+	<script src="js/future-section.js"></script>
+	<script src="js/properties.js"></script>
+	<script src="js/contact-form.js"></script>
+	<script src="js/effects.js"></script>
+
+</body>
+</html>
+

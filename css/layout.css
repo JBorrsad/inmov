@@ -1,0 +1,139 @@
+/* ============================================================
+   LAYOUT.CSS - Estructura general y espaciados
+   ============================================================ */
+
+/* Contenedor principal */
+.iv-main {
+	min-height: 100vh;
+	width: 100%;
+}
+
+/* Espaciado entre secciones */
+.iv-section-spacing {
+	padding: 5rem 0;
+}
+
+.iv-section-spacing--lg {
+	padding: 6rem 0;
+}
+
+.iv-section-spacing--sm {
+	padding: 3rem 0;
+}
+
+/* Transiciones suaves para cards */
+.iv-card-hover {
+	transition: all 0.4s ease;
+}
+
+.iv-card-hover:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Evitar scroll horizontal */
+body {
+	overflow-x: hidden;
+}
+
+/* Secciones con contenido centrado */
+.iv-section-center {
+	text-align: center;
+}
+
+/* Secciones con fondo */
+.iv-section--dark {
+	background-color: var(--iv-color-dark);
+	color: var(--iv-text-white);
+}
+
+.iv-section--light {
+	background-color: var(--iv-color-light);
+}
+
+.iv-section--primary {
+	background-color: var(--iv-color-primary);
+	color: var(--iv-text-white);
+}
+
+/* Grid helpers */
+.iv-grid {
+	display: grid;
+	gap: var(--iv-spacing-md);
+}
+
+.iv-grid--2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.iv-grid--3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.iv-grid--4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/* Flex helpers */
+.iv-flex {
+	display: flex;
+	align-items: center;
+}
+
+.iv-flex--center {
+	justify-content: center;
+}
+
+.iv-flex--between {
+	justify-content: space-between;
+}
+
+.iv-flex--column {
+	flex-direction: column;
+}
+
+/* Contenedores de ancho completo con imagen de fondo */
+.iv-section-bg {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.iv-section-bg::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+}
+
+.iv-section-bg > * {
+	position: relative;
+	z-index: 2;
+}
+
+/* Utilidades de espaciado */
+.iv-mt-sm { margin-top: var(--iv-spacing-sm); }
+.iv-mt-md { margin-top: var(--iv-spacing-md); }
+.iv-mt-lg { margin-top: var(--iv-spacing-lg); }
+.iv-mt-xl { margin-top: var(--iv-spacing-xl); }
+
+.iv-mb-sm { margin-bottom: var(--iv-spacing-sm); }
+.iv-mb-md { margin-bottom: var(--iv-spacing-md); }
+.iv-mb-lg { margin-bottom: var(--iv-spacing-lg); }
+.iv-mb-xl { margin-bottom: var(--iv-spacing-xl); }
+
+.iv-pt-sm { padding-top: var(--iv-spacing-sm); }
+.iv-pt-md { padding-top: var(--iv-spacing-md); }
+.iv-pt-lg { padding-top: var(--iv-spacing-lg); }
+.iv-pt-xl { padding-top: var(--iv-spacing-xl); }
+
+.iv-pb-sm { padding-bottom: var(--iv-spacing-sm); }
+.iv-pb-md { padding-bottom: var(--iv-spacing-md); }
+.iv-pb-lg { padding-bottom: var(--iv-spacing-lg); }
+.iv-pb-xl { padding-bottom: var(--iv-spacing-xl); }
+

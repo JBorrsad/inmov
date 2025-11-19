@@ -1,0 +1,66 @@
+/* ============================================================
+   WELCOME.CSS - Estilos de "Bienvenido a nuestra inmobiliaria"
+   ============================================================ */
+
+.iv-welcome {
+	position: relative;
+	padding: 5rem 0;
+	background-color: var(--iv-bg-soft);
+	background-image: url('../../Assets/image_banner.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+.iv-welcome::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(245, 245, 245, 0.92);
+	z-index: 1;
+}
+
+.iv-welcome .container {
+	position: relative;
+	z-index: 2;
+}
+
+.iv-welcome__logo {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.iv-welcome__logo img {
+	height: 80px;
+	width: auto;
+	opacity: 0.7;
+}
+
+.iv-welcome__content {
+	max-width: 950px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 2rem;
+}
+
+.iv-welcome__title {
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 2rem;
+	color: var(--iv-text-dark);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.iv-welcome__text {
+	font-size: 1.1rem;
+	line-height: 1.85;
+	color: var(--iv-text-dark);
+	margin-bottom: 1.25rem;
+	font-weight: 400;
+}
+

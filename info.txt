@@ -1,0 +1,14 @@
+La prueba consiste en maquetar las tres secciones de las capturas usando Bootstrap 4 y jQuery.
+
+La maquinación final debe igual que la captura propuesta
+
+Las captura son la siguientes:
+
+
+1 - HOME 
+
+Fuentes del documento:
+
+https://fonts.google.com/specimen/Montserrat?query=montserrat
+
+

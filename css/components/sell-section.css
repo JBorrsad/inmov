@@ -1,0 +1,104 @@
+/* ============================================================
+   SELL-SECTION.CSS - Estilos de "Vende tu propiedad"
+   ============================================================ */
+
+.iv-sell {
+	position: relative;
+	padding: 5rem 0;
+	background-color: var(--iv-color-primary);
+	background-image: url('../../Assets/image_sell.jpg');
+	background-size: cover;
+	background-position: center;
+	background-blend-mode: multiply;
+	color: var(--iv-text-white);
+	overflow: hidden;
+}
+
+.iv-sell::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(200, 166, 71, 0.85);
+	z-index: 1;
+}
+
+.iv-sell .container {
+	position: relative;
+	z-index: 2;
+}
+
+.iv-sell__container {
+	display: flex;
+	align-items: center;
+	gap: var(--iv-spacing-xl);
+}
+
+.iv-sell__icon {
+	flex-shrink: 0;
+	margin-bottom: var(--iv-spacing-md);
+}
+
+.iv-sell__icon img {
+	height: 90px;
+	width: auto;
+	filter: brightness(0) invert(1);
+}
+
+.iv-sell__content {
+	flex: 1;
+}
+
+.iv-sell__title {
+	font-size: 2.25rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+	color: var(--iv-text-white);
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.iv-sell__text {
+	font-size: 1.15rem;
+	line-height: 1.8;
+	margin-bottom: var(--iv-spacing-lg);
+	color: var(--iv-text-white);
+}
+
+.iv-sell__btn {
+	display: inline-block;
+	padding: 1rem 2.5rem;
+	background-color: var(--iv-color-dark);
+	color: var(--iv-text-white);
+	border-radius: var(--iv-border-radius);
+	font-weight: 600;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.iv-sell__btn:hover {
+	background-color: var(--iv-color-secondary);
+	transform: translateY(-3px);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+	color: var(--iv-text-white);
+}
+
+.iv-sell__image {
+	flex-shrink: 0;
+	max-width: 450px;
+	border-radius: var(--iv-border-radius-lg);
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.iv-sell__image img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+

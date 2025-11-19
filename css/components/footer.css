@@ -1,0 +1,145 @@
+/* ============================================================
+   FOOTER.CSS - Estilos del footer
+   ============================================================ */
+
+.iv-footer {
+	background-color: var(--iv-color-dark);
+	color: var(--iv-text-white);
+	padding: 4rem 0 2rem;
+}
+
+.iv-footer__logo {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.iv-footer__logo img {
+	max-width: 200px;
+	margin: 0 auto;
+	filter: brightness(0) invert(1);
+}
+
+.iv-footer__phone {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.iv-footer__phone a {
+	font-size: 2rem;
+	font-weight: 700;
+	color: var(--iv-color-primary);
+	text-decoration: none;
+	transition: var(--iv-transition);
+	letter-spacing: 1px;
+}
+
+.iv-footer__phone a:hover {
+	color: var(--iv-color-primary-dark);
+}
+
+.iv-footer__nav {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+	margin-bottom: 3rem;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.iv-footer__nav-column {
+	text-align: center;
+}
+
+.iv-footer__nav-title {
+	font-size: 1.15rem;
+	font-weight: 600;
+	margin-bottom: 1.25rem;
+	color: var(--iv-text-white);
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.iv-footer__nav-link {
+	display: block;
+	color: var(--iv-text-white);
+	opacity: 0.8;
+	margin-bottom: 0.75rem;
+	transition: var(--iv-transition);
+	font-size: 0.95rem;
+}
+
+.iv-footer__nav-link:hover {
+	opacity: 1;
+	color: var(--iv-color-primary);
+	padding-left: 5px;
+}
+
+.iv-footer__contact-info {
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+
+.iv-footer__contact-info p {
+	color: rgba(255, 255, 255, 0.7);
+	margin-bottom: 0.5rem;
+	font-size: 0.95rem;
+}
+
+.iv-footer__social {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.iv-footer__social .iv-social-icon {
+	width: 45px;
+	height: 45px;
+	background-color: rgba(255, 255, 255, 0.1);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-weight: 700;
+	font-size: 1.1rem;
+	transition: all 0.3s ease;
+}
+
+.iv-footer__social a:hover .iv-social-icon {
+	background-color: var(--iv-color-primary);
+	transform: scale(1.1);
+}
+
+.iv-footer__bottom {
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+	padding-top: 2rem;
+	text-align: center;
+}
+
+.iv-footer__copyright {
+	font-size: 0.9rem;
+	color: var(--iv-text-white);
+	opacity: 0.7;
+	margin-bottom: 1rem;
+}
+
+.iv-footer__legal-links {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+}
+
+.iv-footer__legal-links a {
+	font-size: 0.85rem;
+	color: var(--iv-text-white);
+	opacity: 0.7;
+	transition: var(--iv-transition);
+}
+
+.iv-footer__legal-links a:hover {
+	opacity: 1;
+	color: var(--iv-color-primary);
+}
+

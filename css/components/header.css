@@ -1,0 +1,256 @@
+/* Header - Banda oscura continua */
+
+.iv-header {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	background-color: var(--iv-color-dark);
+	transition: box-shadow 0.3s ease;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.iv-header.iv-header--scrolled {
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Topbar superior */
+.iv-header__topbar {
+	background-color: var(--iv-color-dark);
+	padding: 0.6rem 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.iv-header__contact {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.iv-header__phone,
+.iv-header__email {
+	color: var(--iv-text-white);
+	font-size: 0.9rem;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	font-weight: 400;
+}
+
+.iv-header__phone:hover,
+.iv-header__email:hover {
+	color: var(--iv-color-primary);
+}
+
+/* Redes sociales y acciones */
+.iv-header__social a,
+.iv-header__whatsapp a {
+	color: var(--iv-text-white);
+	font-size: 1rem;
+	transition: color 0.3s ease;
+}
+
+.iv-header__social a:hover,
+.iv-header__whatsapp a:hover {
+	color: var(--iv-color-primary);
+}
+
+/* Selector de idioma */
+.iv-header__language-switcher select {
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: var(--iv-text-white);
+	padding: 0.25rem 0.5rem;
+	font-size: 0.85rem;
+	cursor: pointer;
+}
+
+.iv-header__language-switcher select:focus {
+	outline: none;
+	border-color: var(--iv-color-primary);
+}
+
+/* Navegación principal */
+.iv-header__nav {
+	background-color: transparent;
+	padding: 0.85rem 0;
+}
+
+.iv-header__logo {
+	display: inline-block;
+	max-width: 200px;
+	transition: opacity 0.3s ease;
+}
+
+.iv-header__logo:hover {
+	opacity: 0.85;
+}
+
+.iv-header__logo img {
+	width: 100%;
+	height: auto;
+}
+
+/* Botón menú */
+.iv-header__menu-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--iv-text-white);
+	font-weight: 500;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	font-size: 0.95rem;
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+.iv-header__menu-btn:hover {
+	color: var(--iv-color-primary);
+}
+
+/* Navegación secundaria */
+.iv-header__nav-secondary a {
+	color: var(--iv-text-white);
+	font-weight: 500;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	font-size: 0.9rem;
+}
+
+.iv-header__nav-secondary a:hover {
+	color: var(--iv-color-primary);
+}
+
+/* Iconos sociales simples */
+.iv-social-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+	font-weight: 600;
+	font-size: 0.85rem;
+	transition: background-color 0.3s ease;
+}
+
+.iv-header__social a:hover .iv-social-icon,
+.iv-header__whatsapp a:hover .iv-social-icon {
+	background-color: var(--iv-color-primary);
+}
+
+.iv-footer__social .iv-social-icon {
+	width: 40px;
+	height: 40px;
+	font-size: 1rem;
+}
+
+/* Icono del menú */
+.iv-header__menu-icon {
+	width: 20px;
+	height: auto;
+	filter: brightness(0) invert(1);
+}
+
+/* Menú móvil */
+.iv-header__mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.3s, opacity 0.3s;
+}
+
+.iv-header__mobile-menu.iv-header__mobile-menu--open {
+	visibility: visible;
+	opacity: 1;
+}
+
+.iv-header__mobile-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	z-index: 1;
+}
+
+.iv-header__mobile-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 320px;
+	max-width: 85%;
+	background-color: var(--iv-color-dark);
+	z-index: 2;
+	transform: translateX(-100%);
+	transition: transform 0.35s ease;
+	overflow-y: auto;
+	box-shadow: 8px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.iv-header__mobile-menu.iv-header__mobile-menu--open .iv-header__mobile-content {
+	transform: translateX(0);
+}
+
+.iv-header__mobile-close {
+	position: absolute;
+	top: 1.25rem;
+	right: 1.25rem;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border: none;
+	color: var(--iv-text-white);
+	font-size: 2.5rem;
+	line-height: 0.8;
+	cursor: pointer;
+	z-index: 3;
+	font-weight: 300;
+}
+
+.iv-header__mobile-nav {
+	padding: 4.5rem 2rem 2rem;
+}
+
+.iv-header__mobile-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.iv-header__mobile-list li {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.iv-header__mobile-list li:last-child {
+	border-bottom: none;
+}
+
+.iv-header__mobile-list a {
+	display: block;
+	padding: 1.1rem 0;
+	color: var(--iv-text-white);
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	font-size: 1rem;
+}
+
+.iv-header__mobile-list a:hover {
+	color: var(--iv-color-primary);
+	padding-left: 0.75rem;
+}
+
+/* Bloquear scroll cuando menú está abierto */
+.iv-body--menu-open {
+	overflow: hidden;
+}

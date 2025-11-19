@@ -1,0 +1,717 @@
+/* ============================================================
+   RESPONSIVE.CSS - Media queries generales
+   ============================================================ */
+
+/* Tablets y pantallas medianas (hasta 991px) */
+@media (max-width: 991.98px) {
+	:root {
+		--iv-spacing-lg: 2.5rem;
+		--iv-spacing-xl: 3rem;
+	}
+	
+	h1 {
+		font-size: 2.5rem;
+	}
+	
+	h2 {
+		font-size: 2rem;
+	}
+	
+	h3 {
+		font-size: 1.75rem;
+	}
+	
+	/* Hero responsive */
+	.iv-hero {
+		min-height: calc(80vh - 100px);
+		padding-bottom: 120px;
+	}
+	
+	.iv-hero__content {
+		padding: 3rem 0 5rem;
+	}
+	
+	.iv-hero__title {
+		font-size: clamp(3rem, 5vw, 4.5rem);
+		letter-spacing: 0.3em;
+		text-align: center;
+	}
+	
+	.iv-hero__subtitle {
+		font-size: 1.5rem;
+		text-align: center;
+	}
+	
+	.iv-hero__subtitle small {
+		font-size: 1.5rem;
+	}
+	
+	.iv-hero__scroll-arrow {
+		display: block;
+		text-align: center;
+		margin-top: 2rem;
+	}
+	
+	.iv-hero__search-box {
+		margin-top: -90px;
+		padding: 1.75rem 1.5rem;
+	}
+	
+	/* Search buttons responsive */
+	.iv-search__btn {
+		font-size: 0.85rem;
+		padding: 0.8rem 1.5rem;
+	}
+	
+	/* Header responsive */
+	.iv-header__topbar {
+		font-size: 0.85rem;
+	}
+	
+	.iv-header__logo {
+		max-width: 150px;
+	}
+	
+	/* Future section responsive */
+	.iv-future__title {
+		font-size: 2rem;
+	}
+	
+	.iv-future__cards {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+	
+	.iv-future__card {
+		padding: 2.5rem 1.5rem;
+		min-height: 180px;
+	}
+	
+	.iv-future__card-title {
+		font-size: 1.4rem;
+	}
+	
+	.iv-future__card-count strong {
+		font-size: 2.25rem;
+	}
+	
+	/* Featured property responsive */
+	.iv-featured-property {
+		padding: 4rem 0;
+	}
+	
+	.iv-featured-property h2 {
+		font-size: 2.25rem;
+		margin-bottom: 3rem;
+	}
+	
+	.iv-featured-property__image {
+		min-height: 480px;
+	}
+	
+	.iv-featured-property__details {
+		padding: 3rem 2.5rem;
+		min-height: 480px;
+	}
+	
+	.iv-featured-property__ref {
+		font-size: 0.8rem;
+		padding: 0.55rem 1.1rem;
+	}
+	
+	.iv-featured-property__title {
+		font-size: 1.6rem;
+	}
+	
+	.iv-featured-property__title span {
+		font-size: 1.4rem;
+	}
+	
+	.iv-featured-property__location {
+		font-size: 1.05rem;
+	}
+	
+	.iv-featured-property__meta-list {
+		font-size: 1rem;
+	}
+	
+	.iv-featured-property__price {
+		font-size: 2.75rem;
+	}
+	
+	/* Sell section responsive */
+	.iv-sell__container {
+		gap: 2rem;
+	}
+	
+	.iv-sell__content {
+		max-width: 600px;
+	}
+	
+	.iv-sell__icon img {
+		height: 70px;
+	}
+	
+	.iv-sell__title {
+		font-size: 2rem;
+	}
+	
+	.iv-sell__text {
+		font-size: 1.05rem;
+	}
+	
+	.iv-sell__image {
+		max-width: 350px;
+	}
+	
+	/* Properties grid responsive */
+	.iv-properties {
+		padding: 4rem 0;
+	}
+	
+	.iv-properties__title {
+		font-size: 2rem;
+	}
+	
+	.iv-properties__card-image {
+		height: 240px;
+	}
+	
+	/* News responsive */
+	.iv-news {
+		padding: 4rem 0;
+	}
+	
+	.iv-news__title {
+		font-size: 2rem;
+	}
+	
+	.iv-news__grid {
+		gap: 2rem;
+	}
+	
+	.iv-news__card-image {
+		height: 280px;
+	}
+	
+	.iv-news__card-content {
+		padding: 1.75rem;
+	}
+	
+	/* Welcome responsive */
+	.iv-welcome {
+		padding: 4rem 0;
+	}
+	
+	.iv-welcome__title {
+		font-size: 2rem;
+	}
+	
+	.iv-welcome__text {
+		font-size: 1.05rem;
+	}
+	
+	/* Contact responsive */
+	.iv-contact {
+		padding: 4rem 0;
+	}
+	
+	.iv-contact__title {
+		font-size: 2rem;
+	}
+	
+	/* Footer responsive */
+	.iv-footer {
+		padding: 3.5rem 0 2rem;
+	}
+	
+	.iv-footer__nav {
+		gap: 1.5rem;
+	}
+}
+
+/* Móviles y pantallas pequeñas (hasta 767px) */
+@media (max-width: 767.98px) {
+	:root {
+		--iv-spacing-md: 1.5rem;
+		--iv-spacing-lg: 2rem;
+		--iv-spacing-xl: 2.5rem;
+	}
+	
+	h1 {
+		font-size: 2rem;
+	}
+	
+	h2 {
+		font-size: 1.75rem;
+	}
+	
+	h3 {
+		font-size: 1.5rem;
+	}
+	
+	/* Secciones generales mobile */
+	.iv-section-spacing,
+	.iv-future,
+	.iv-featured-property,
+	.iv-sell,
+	.iv-properties,
+	.iv-welcome,
+	.iv-news,
+	.iv-contact {
+		padding: 3rem 0;
+	}
+	
+	/* Hero mobile */
+	.iv-hero {
+		min-height: 60vh;
+		padding-bottom: 1.5rem;
+		padding-top: 1.5rem;
+		justify-content: center;
+	}
+	
+	.iv-hero__content {
+		padding: 2rem 0 3rem;
+	}
+	
+	.iv-hero__title {
+		font-size: 2.5rem;
+		letter-spacing: 0.2em;
+		text-align: center !important;
+	}
+	
+	.iv-hero__subtitle {
+		font-size: 1.15rem;
+		text-align: center !important;
+	}
+	
+	.iv-hero__subtitle small {
+		font-size: 1.15rem;
+	}
+	
+	/* Desactivar animaciones de entrada en móvil */
+	.animate__animated {
+		animation-duration: 0s !important;
+	}
+	
+	.iv-hero__scroll-arrow {
+		display: none !important;
+	}
+	
+	.iv-hero__search-box {
+		margin-top: 1.75rem;
+		padding: 1.5rem 1.25rem;
+		border-radius: 6px;
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+	}
+	
+	/* Header mobile */
+	.iv-header__topbar {
+		display: none;
+	}
+	
+	.iv-header__logo {
+		max-width: 120px;
+	}
+	
+	.iv-header__nav {
+		padding: 0.75rem 0;
+	}
+	
+	.iv-header__menu-btn {
+		font-size: 0.9rem;
+	}
+	
+	.iv-header__nav-secondary a {
+		font-size: 0.85rem;
+	}
+	
+	.iv-header__nav-secondary a:first-child {
+		display: none !important;
+	}
+	
+	.iv-header__menu-icon {
+		width: 18px;
+	}
+	
+	/* Search mobile */
+	.iv-search__select,
+	.iv-search__input {
+		padding: 0.75rem;
+		font-size: 0.85rem;
+	}
+	
+	.iv-search__btn {
+		padding: 0.75rem 1rem;
+		font-size: 0.85rem;
+	}
+	
+	.iv-search__btn img {
+		width: 14px;
+	}
+	
+	/* Ocultar segunda fila de botones en móvil */
+	.iv-search .row.mt-2 {
+		display: none;
+	}
+	
+	/* Future section mobile */
+	.iv-future {
+		min-height: auto;
+		padding: 3rem 0 3.5rem;
+	}
+	
+	.iv-future__title {
+		font-size: 1.6rem;
+		margin-bottom: 0.75rem;
+	}
+	
+	.iv-future__icon img {
+		height: 50px;
+	}
+	
+	.iv-future__cards {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+	
+	.iv-future__card {
+		padding: 2.5rem 1.5rem;
+		min-height: 160px;
+	}
+	
+	.iv-future__card-title {
+		font-size: 1.35rem;
+	}
+	
+	.iv-future__card-count {
+		font-size: 1.1rem;
+	}
+	
+	.iv-future__card-count strong {
+		font-size: 2.25rem;
+	}
+	
+	/* Featured property mobile */
+	.iv-featured-property {
+		padding: 3rem 0;
+	}
+	
+	.iv-featured-property h2 {
+		font-size: 1.65rem;
+		margin-bottom: 2.5rem;
+	}
+	
+	.iv-featured-property__image {
+		height: 380px;
+		min-height: 380px;
+	}
+	
+	.iv-featured-property__details {
+		padding: 2.5rem 2rem;
+		min-height: auto;
+	}
+	
+	.iv-featured-property__ref {
+		font-size: 0.75rem;
+		padding: 0.5rem 1rem;
+		margin-bottom: 2rem;
+	}
+	
+	.iv-featured-property__text {
+		margin-bottom: 2rem;
+	}
+	
+	.iv-featured-property__title {
+		font-size: 1.45rem;
+	}
+	
+	.iv-featured-property__title span {
+		font-size: 1.25rem;
+	}
+	
+	.iv-featured-property__location {
+		font-size: 1.05rem;
+	}
+	
+	.iv-featured-property__meta {
+		margin-bottom: 2rem;
+	}
+	
+	.iv-featured-property__meta-list {
+		font-size: 0.95rem;
+	}
+	
+	.iv-featured-property__price {
+		font-size: 2.5rem;
+	}
+	
+	.iv-featured-property__favorite {
+		top: 1.5rem;
+		right: 1.5rem;
+		width: 42px;
+		height: 42px;
+	}
+	
+	/* Sell section mobile */
+	.iv-sell {
+		padding: 3rem 0;
+	}
+	
+	.iv-sell__container {
+		flex-direction: column;
+		text-align: center;
+		gap: 1.5rem;
+	}
+	
+	.iv-sell__icon {
+		margin-bottom: 0.75rem;
+	}
+	
+	.iv-sell__icon img {
+		height: 60px;
+	}
+	
+	.iv-sell__title {
+		font-size: 1.6rem;
+		margin-bottom: 1.25rem;
+	}
+	
+	.iv-sell__text {
+		font-size: 1rem;
+		margin-bottom: 1.5rem;
+	}
+	
+	.iv-sell__image {
+		max-width: 100%;
+		display: none;
+	}
+	
+	/* Properties grid mobile */
+	.iv-properties {
+		padding: 3rem 0;
+	}
+	
+	.iv-properties__title {
+		font-size: 1.6rem;
+	}
+	
+	.iv-properties__card {
+		margin-bottom: 1rem;
+	}
+	
+	.iv-properties__card-image {
+		height: 220px;
+	}
+	
+	.iv-properties__card-price {
+		font-size: 1.5rem;
+	}
+	
+	.iv-properties__card-features {
+		gap: 1rem;
+		font-size: 0.9rem;
+	}
+	
+	/* Welcome mobile */
+	.iv-welcome {
+		background-attachment: scroll;
+		padding: 3rem 0;
+	}
+	
+	.iv-welcome__logo img {
+		height: 55px;
+	}
+	
+	.iv-welcome__title {
+		font-size: 1.6rem;
+	}
+	
+	.iv-welcome__text {
+		font-size: 1rem;
+		text-align: justify;
+		padding: 0 0.5rem;
+	}
+	
+	.iv-welcome__content {
+		padding: 0 1rem;
+	}
+	
+	/* News mobile */
+	.iv-news {
+		padding: 3rem 0;
+	}
+	
+	.iv-news__title {
+		font-size: 1.6rem;
+	}
+	
+	.iv-news__grid {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+	
+	.iv-news__card-image {
+		height: 250px;
+	}
+	
+	.iv-news__card-title {
+		font-size: 1.25rem;
+	}
+	
+	.iv-news__card-content {
+		padding: 1.5rem;
+	}
+	
+	/* Contact mobile */
+	.iv-contact {
+		padding: 3rem 0;
+	}
+	
+	.iv-contact__title {
+		font-size: 1.6rem;
+	}
+	
+	.iv-contact__privacy-text {
+		font-size: 0.95rem;
+	}
+	
+	.iv-contact__checkbox {
+		align-items: center;
+		text-align: left;
+	}
+	
+	.iv-contact__submit {
+		padding: 1rem 2.5rem;
+		font-size: 0.95rem;
+		width: 100%;
+	}
+	
+	.iv-contact__legal-text {
+		font-size: 0.85rem;
+		text-align: left;
+	}
+	
+	.iv-contact__info {
+		flex-direction: column;
+		gap: 1rem;
+		text-align: center;
+	}
+	
+	/* Footer mobile */
+	.iv-footer {
+		padding: 3rem 0 1.5rem;
+	}
+	
+	.iv-footer__phone a {
+		font-size: 1.5rem;
+	}
+	
+	.iv-footer__nav {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		margin-bottom: 2rem;
+	}
+	
+	.iv-footer__nav-link:hover {
+		padding-left: 0;
+	}
+	
+	.iv-footer__social .iv-social-icon {
+		width: 40px;
+		height: 40px;
+	}
+	
+	.iv-footer__legal-links {
+		flex-direction: column;
+		gap: 0.75rem;
+	}
+}
+
+/* Móviles muy pequeños (hasta 575px) */
+@media (max-width: 575.98px) {
+	:root {
+		--iv-font-size-base: 14px;
+	}
+	
+	h1 {
+		font-size: 1.75rem;
+	}
+	
+	h2 {
+		font-size: 1.5rem;
+	}
+	
+	h3 {
+		font-size: 1.25rem;
+	}
+	
+	.iv-hero__title {
+		font-size: 2rem;
+		letter-spacing: 0.15em;
+		text-align: center !important;
+	}
+	
+	.iv-hero__subtitle {
+		font-size: 1rem;
+		margin-bottom: 0;
+		text-align: center !important;
+	}
+	
+	.iv-hero__search-box {
+		padding: 1.25rem 1rem;
+		margin-top: 1.5rem;
+	}
+	
+	.iv-hero__content {
+		padding: 1.5rem 0 2.5rem;
+	}
+	
+	.iv-search__btn {
+		font-size: 0.85rem;
+		padding: 0.75rem 1rem;
+	}
+	
+	.iv-future__card-title,
+	.iv-news__card-title {
+		font-size: 1.25rem;
+	}
+	
+	.iv-properties__card-price,
+	.iv-featured-property__price {
+		font-size: 1.5rem;
+	}
+	
+	.iv-properties__card-image,
+	.iv-featured-property__image {
+		height: 200px;
+	}
+	
+	.iv-news__card-image {
+		height: 220px;
+	}
+	
+	.iv-future__card {
+		padding: 2rem 1.25rem;
+	}
+	
+	.iv-future__card-title {
+		font-size: 1.2rem;
+	}
+	
+	.iv-sell__title {
+		font-size: 1.5rem;
+	}
+	
+	.iv-welcome__title,
+	.iv-news__title,
+	.iv-contact__title {
+		font-size: 1.5rem;
+	}
+	
+	.iv-properties__title,
+	.iv-featured-property h2 {
+		font-size: 1.5rem;
+	}
+}
+
