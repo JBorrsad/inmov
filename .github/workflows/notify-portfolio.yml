@@ -8,6 +8,7 @@ on:
 jobs:
   notify:
     runs-on: ubuntu-latest
+    environment: public
     steps:
       - name: Trigger portfolio rebuild
         run: |
