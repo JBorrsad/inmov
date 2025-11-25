@@ -1,0 +1,8 @@
+{
+	"title": "Prueba Técnica - InmoValley",
+	"description": "Prueba técnica de maquetación realizada para una entrevista. Replicación fiel del diseño de la página principal de una inmobiliaria con funcionalidades interactivas. Tecnologías: HTML5 semántico, CSS3 con variables personalizadas y metodología BEM, Bootstrap 5 para el sistema de grid responsive, y jQuery para la interactividad. Funcionalidades implementadas: buscador de propiedades con filtros avanzados (estado, tipo, población, zona, precio, baños, piscina), sistema de favoritos con persistencia en localStorage, menú móvil lateral deslizante, animaciones suaves en scroll, diseño completamente responsive (móvil, tablet, desktop), efectos hover en tarjetas y botones, y secciones para propiedades destacadas, noticias y formulario de contacto.",
+	"website": "https://github.com/JBorrsad/inmov",
+	"coverImage": "cover.png",
+	"tags": ["HTML", "CSS", "Bootstrap", "jQuery"]
+}
+
